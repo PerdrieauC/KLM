@@ -1,4 +1,4 @@
-import { Connaissance } from "../Connaissance/Connaissance";
+import { Connaissance } from "../Connaissance";
 import { Etape } from "./Etape";
 
 export class Procedural extends Connaissance {
