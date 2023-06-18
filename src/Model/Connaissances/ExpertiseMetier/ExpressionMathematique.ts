@@ -2,9 +2,11 @@ import {Regles} from "./Regles";
 import {evaluate} from "mathjs";
 
 export class ExpressionMathematique extends Regles{
+    public expression: string;
 
     constructor(expression: string, parametre: {[key:string]: any}) {
-        super(expression, parametre);
+        super(parametre);
+        this.expression = expression;
     }
 
     public evaluateExpression() {
