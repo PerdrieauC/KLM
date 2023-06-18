@@ -1,8 +1,16 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import logo from './logo.svg';
 import './App.css';
+import {ExpressionMathematique} from "./Model/Connaissances/ExpertiseMetier/ExpressionMathematique";
 
 function App() {
+
+  useEffect(() => {
+    let expression = new ExpressionMathematique('a + 2', {a: 3, b: 4});
+    let result = expression.evaluateExpression();
+    console.log(result)
+  }, [])
+
   return (
     <div className="App">
       <header className="App-header">
