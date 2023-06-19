@@ -19,21 +19,21 @@
               "terme": 2
             }
           ],
-          "parametre": {}
+          "parametres": {}
         },
         {
           "id": 1,
           "nom": "Lame",
           "description": "Fer (d'un instrument, d'un outil tranchant).",
           "Lien": [],
-          "parametre": {}
+          "parametres": {}
         },
         {
           "id": 2,
           "nom": "Manche",
           "description": "Partie allongée (d'un outil, d'un instrument) par laquelle on le tient.",
           "Lien": [],
-          "parametre": {}
+          "parametres": {}
         }
       ],
       "Procedural": [
@@ -42,19 +42,19 @@
           "description": "Comment réaliser une découpe en bâtonnets ?",
           "etape": [
             {
-              "numero": 1,
+              "numero": "A1",
               "description": "Coupez vos légumes en tronçons de 5 cm."
             },
             {
-              "numero": 2,
+              "numero": "A2",
               "description": "Coupez vos tronçons en tranche de 0.5 cm."
             },
             {
-              "numero": 3,
+              "numero": "A3",
               "description": "Taillez chaque tranche en bâtonnets."
             }
           ],
-          "parametre": {}
+          "parametres": {}
         }
       ],
       "ExpertiseMetier": [
@@ -92,7 +92,7 @@
               }
             }
           ],
-          "parametre": {}
+          "parametres": {}
         }
       ],
       "Experimental": [
@@ -100,13 +100,13 @@
           "nom": "Coupure au couteau durant la découpe de légume",
           "description": "Pour éviter de vous couper durant la découpe de légume. Avec votre main \"libre\", vous guidez la main avec laquelle vous tenez votre couteau. Pour ce faire, placez vos trois doigts du milieu directement sur votre aliment. Gardez le bout de vos doigts repliés de sorte à ce que ce soit vos articulations qui entrent en contact avec la lame du couteau. Vous réglez ainsi le tempo et vous ne pouvez pas vous couper les doigts (tant que votre lame reste droite).",
           "type": "BM",
-          "parametre": {}
+          "parametres": {}
         },
         {
           "nom": "Avoir un couteau éfficace",
           "description": "Bien aiguiser son couteau avant chaque utilisation pour avoir un couteau bien tranchant.",
           "type": "CE",
-          "parametre": {}
+          "parametres": {}
         }
       ]
     }]
