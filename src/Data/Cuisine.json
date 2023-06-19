@@ -1,79 +1,114 @@
 {
-  "filliereMetier": "Cuisine",
-  "domaineMetier": {
-    "nom": "Cuisiner en sécurité",
-    "Vocabulaire": [
+  "filliereMetier": {
+    "nom": "Cuisine",
+    "domaineMetier": [
       {
-        "id": 0,
-        "nom": "Couteau",
-        "description": "Instrument tranchant servant à couper, composé d'une lame et d'un manche.",
-        "Lien": [
-          {"type": "ASA", "terme": 1}, {"type": "ASA", "terme": 2}
-        ],
-        "parametre": {}
-      },
-      {
-        "id": 1,
-        "nom": "Lame",
-        "description": "Fer (d'un instrument, d'un outil tranchant).",
-        "Lien": [],
-        "parametre": {}
-      },
-      {
-        "id": 2,
-        "nom": "Manche",
-        "description": "Partie allongée (d'un outil, d'un instrument) par laquelle on le tient.",
-        "Lien": [],
-        "parametre": {}
-      }
-    ],
-    "Procedural": [
-      {
-        "nom": "Découpe en bâtonnets",
-        "description": "Comment réaliser une découpe en bâtonnets ?",
-        "etape": [{"numero": 1, "description": "Coupez vos légumes en tronçons de 5 cm."},
-          {"numero": 2, "description": "Coupez vos tronçons en tranche de 0.5 cm."},
-          {"numero": 3, "description": "Taillez chaque tranche en bâtonnets."}],
-        "parametre": {}
-      }
-    ],
-    "ExpertiseMetier": [
-      {
-        "nom": "Combien de carotte par personne",
-        "description": "",
-        "regles": [
-          {"nom": "Pour combien de personne ai-je assez de carotte ?",
-            "type": "MATH",
-            "expression": "poidDisponible / poidParPersonne",
-            "parametres": {"poidDisponible": null, "poidParPersonne": 125}
-          },
-          {"nom": "ai-je assez de carotte ?",
-            "type": "LOGIQUE",
-            "expression": "poidDisponible >= poidParPersonne * nbPersonne",
-            "parametres": {"poidDisponible": null, "nbPersonne": null, "poidParPersonne": 125}
-          },
-          {"nom": "ai-je assez de carotte ?",
-            "type": "NUAGE",
-            "expression": "poidDisponible >= poidParPersonne * nbPersonne",
-            "parametres": {"poidDisponible": null, "nbPersonne": null, "poidParPersonne": 125}
-          }
-        ],
-        "parametre": {}
-      }
-    ],
-    "Experimental": [
-      {
-        "nom": "Coupure au couteau durant la découpe de légume",
-        "description": "Pour éviter de vous couper durant la découpe de légume. Avec votre main \"libre\", vous guidez la main avec laquelle vous tenez votre couteau. Pour ce faire, placez vos trois doigts du milieu directement sur votre aliment. Gardez le bout de vos doigts repliés de sorte à ce que ce soit vos articulations qui entrent en contact avec la lame du couteau. Vous réglez ainsi le tempo et vous ne pouvez pas vous couper les doigts (tant que votre lame reste droite).",
-        "type": "BM",
-        "parametre": {}
-      },
-      {
-        "nom": "Avoir un couteau éfficace",
-        "description": "Bien aiguiser son couteau avant chaque utilisation pour avoir un couteau bien tranchant.",
-        "type": "CE",
-        "parametre": {}
-      }
-    ]
+      "nom": "Cuisiner en sécurité",
+      "Vocabulaire": [
+        {
+          "id": 0,
+          "nom": "Couteau",
+          "description": "Instrument tranchant servant à couper, composé d'une lame et d'un manche.",
+          "Lien": [
+            {
+              "type": "ASA",
+              "terme": 1
+            },
+            {
+              "type": "ASA",
+              "terme": 2
+            }
+          ],
+          "parametre": {}
+        },
+        {
+          "id": 1,
+          "nom": "Lame",
+          "description": "Fer (d'un instrument, d'un outil tranchant).",
+          "Lien": [],
+          "parametre": {}
+        },
+        {
+          "id": 2,
+          "nom": "Manche",
+          "description": "Partie allongée (d'un outil, d'un instrument) par laquelle on le tient.",
+          "Lien": [],
+          "parametre": {}
+        }
+      ],
+      "Procedural": [
+        {
+          "nom": "Découpe en bâtonnets",
+          "description": "Comment réaliser une découpe en bâtonnets ?",
+          "etape": [
+            {
+              "numero": 1,
+              "description": "Coupez vos légumes en tronçons de 5 cm."
+            },
+            {
+              "numero": 2,
+              "description": "Coupez vos tronçons en tranche de 0.5 cm."
+            },
+            {
+              "numero": 3,
+              "description": "Taillez chaque tranche en bâtonnets."
+            }
+          ],
+          "parametre": {}
+        }
+      ],
+      "ExpertiseMetier": [
+        {
+          "nom": "Combien de carotte par personne",
+          "description": "",
+          "regles": [
+            {
+              "nom": "Pour combien de personne ai-je assez de carotte ?",
+              "type": "MATH",
+              "expression": "poidDisponible / poidParPersonne",
+              "parametres": {
+                "poidDisponible": null,
+                "poidParPersonne": 125
+              }
+            },
+            {
+              "nom": "ai-je assez de carotte ?",
+              "type": "LOGIQUE",
+              "expression": "poidDisponible >= poidParPersonne * nbPersonne",
+              "parametres": {
+                "poidDisponible": null,
+                "nbPersonne": null,
+                "poidParPersonne": 125
+              }
+            },
+            {
+              "nom": "ai-je assez de carotte ?",
+              "type": "NUAGE",
+              "expression": "poidDisponible >= poidParPersonne * nbPersonne",
+              "parametres": {
+                "poidDisponible": null,
+                "nbPersonne": null,
+                "poidParPersonne": 125
+              }
+            }
+          ],
+          "parametre": {}
+        }
+      ],
+      "Experimental": [
+        {
+          "nom": "Coupure au couteau durant la découpe de légume",
+          "description": "Pour éviter de vous couper durant la découpe de légume. Avec votre main \"libre\", vous guidez la main avec laquelle vous tenez votre couteau. Pour ce faire, placez vos trois doigts du milieu directement sur votre aliment. Gardez le bout de vos doigts repliés de sorte à ce que ce soit vos articulations qui entrent en contact avec la lame du couteau. Vous réglez ainsi le tempo et vous ne pouvez pas vous couper les doigts (tant que votre lame reste droite).",
+          "type": "BM",
+          "parametre": {}
+        },
+        {
+          "nom": "Avoir un couteau éfficace",
+          "description": "Bien aiguiser son couteau avant chaque utilisation pour avoir un couteau bien tranchant.",
+          "type": "CE",
+          "parametre": {}
+        }
+      ]
+    }]
   }
 }
