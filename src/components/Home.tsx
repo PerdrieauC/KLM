@@ -34,7 +34,7 @@ const Home: React.FC = () => {
           </AppBar>
           <Tabs value={selectedTab} onChange={handleTabChange} variant="fullWidth">
             <Tab label="Visualisation" sx={{fontSize: '16px'}} />
-            <Tab label="Modifier" sx={{fontSize: '16px'}}/>
+            <Tab label="Modification" sx={{fontSize: '16px'}}/>
             <Tab label="Manipulation" sx={{fontSize: '16px'}}/>
           </Tabs>
           {selectedTab === 0 && <Visualisation />}

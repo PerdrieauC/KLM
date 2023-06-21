@@ -12,7 +12,7 @@
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Ombre */
   border-radius: 8px;
   max-width: 90%; /* Taille maximale de la boîte en pourcentage */
-  width: 90%; /* Largeur de la boîte pour les écrans plus larges */
+  width: 95%; /* Largeur de la boîte pour les écrans plus larges */
 
   /* Ajouter des styles pour une mise en page responsive */
   @media (max-width: 600px) {
