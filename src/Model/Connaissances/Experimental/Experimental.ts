@@ -5,15 +5,11 @@ export enum TypeExperience {
     BM = "Bétise métier"
 }
 
-export class ExperienceMetier extends Connaissance {
+export class Experimental extends Connaissance {
     public type: TypeExperience;
 
-    constructor(nom: string, description: string, type: TypeExperience) {
+    constructor(nom: string, description: string, type: string) {
         super(nom, description);
-        this.type = type;
-    }
-
-    public toString(): string {
-        return `ExperienceMetier{type=${this.type}, nom='${this.nom}', description='${this.description}'}`;
+        this.type = TypeExperience[type as keyof typeof TypeExperience];
     }
 }

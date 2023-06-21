@@ -1,0 +1,22 @@
+.home-page {
+    background-color: rgb(41, 41, 41); /* Couleur de fond unie */
+    min-height: 100vh; /* Hauteur minimale pour remplir la page */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.box {
+  padding: 16px;
+  background-color: #FFFFFF; /* Couleur de la boîte */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Ombre */
+  border-radius: 8px;
+  max-width: 90%; /* Taille maximale de la boîte en pourcentage */
+  width: 90%; /* Largeur de la boîte pour les écrans plus larges */
+
+  /* Ajouter des styles pour une mise en page responsive */
+  @media (max-width: 600px) {
+      /* Styles spécifiques pour les écrans plus petits */
+      width: 90%; /* Ajuster la largeur pour les écrans plus petits */
+  }
+}

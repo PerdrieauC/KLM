@@ -1,11 +1,11 @@
 import { Connaissance } from "../Connaissance";
-import { Regles } from "./Regles";
+import { Regle } from "./Regle";
 
 export class ExpertiseMetier extends Connaissance {
-    public regles: { [key: string]: Regles };
+    public regles: Regle[];
 
-    constructor(nom: string, description: string) {
+    constructor(nom: string, description: string, rules: Regle[]) {
         super(nom, description);
-        this.regles = {};
+        this.regles = rules;
     }
 }
