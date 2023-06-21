@@ -5,43 +5,29 @@ Le Knowledge Lifecycle Management (KLM) est une approche systématique pour la g
 ## Etat du projet
 
 Actuellement, la plateforme permet de visualiser le contenu du fichier json contenant les données liées à une filière metier. Pour tester, vu qu'aucun déploiement n'a été fait pour le moment faute de ressources, il faudra procéder comme suit :
-### 1- 
+### 1- Installer le projet en local soit en faisant un git clone soit en téléchargeant le projet directement
+### 2- Ouvrir le projet, se placer à la racine et saisir : ### `npm install`
+### 3- Une fois les dépendances installées grâce à la précédente commande, taper la commande : ### `npm start`
+### 4- Ouvrir  [http://localhost:3000](http://localhost:3000) sur votre navigateur
 
-### `npm start`
+## Comment changer de source de données :
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### 1- Mettre votre fichier json dans le dossier src > Data
+### 2- Remplacer la ligne 5 du fichier Components>Visualisation.tsx en mettant le bon nom de votre fichier
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Apercu de rendu
+![image](https://github.com/PerdrieauC/KLM/assets/85830004/9382b14d-c61f-4601-ad32-7ddceebaa8c5)
 
-### `npm test`
+## Travail restant : 
+Faute de temps nous n'avons pas pu couvrir l'ensemble des fonctionnalités voulues. Pour une meilleure reprise du projet nous suggérons de procéder ainsi :
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 1- Développer l'onglet `Modification` en vue de permettre aux utilisateurs de modifier directement leur json dans l'application
+### 2- Développer l'onglet `Manipulation` en vue de permettre à l'utilisateur d'exploiter les connaissances de manière effficace. Ex : le cas de l'affichage du vocabulaire sous forme de graphe
+### 3- Mettre en place la gestion des profils utilisateurs
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Participants : 
+### 1- Clément PERDRIEAU
+### 2- Amiti MALSOR
+### 3- Osée Brayan TCHAPPI
+##
