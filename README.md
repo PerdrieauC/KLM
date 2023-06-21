@@ -36,7 +36,7 @@ Faute de temps nous n'avons pas pu couvrir l'ensemble des fonctionnalités voulu
 ## Participants : 
  1- Clément PERDRIEAU
  
- 2- Amiti MALSOR
+ 2- Malsor HAMITI
  
  3- Osée Brayan TCHAPPI
 
