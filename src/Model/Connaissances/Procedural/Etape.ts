@@ -1,11 +1,9 @@
 export class Etape {
+    public numero: string;
     public description: string;
 
-    constructor(description: string) {
+    constructor(num: string, description: string) {
+        this.numero = num;
         this.description = description;
-    }
-
-    public toString(): string {
-        return this.description;
     }
 }

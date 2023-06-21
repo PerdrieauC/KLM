@@ -1,14 +1,19 @@
-import { Terme } from './Terme';
 import { TypeLien } from './TypeLien'
 
-class Lien {
-    private premierTerme: Terme;
-    private secondTerme: Terme;
+export class Lien {
+    private idTerme: number;
     private type: TypeLien;
 
-    constructor(t1: Terme, t2: Terme, lien: string) {
-        this.premierTerme = t1;
-        this.secondTerme = t2;
+    constructor(id: number, lien: string) {
+        this.idTerme = id;
         this.type = TypeLien[lien as keyof typeof TypeLien];
+    }
+
+    public getIdTerme(): number {
+        return this.idTerme;
+    }
+
+    public getType(): TypeLien {
+        return this.type;
     }
 }
