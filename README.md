@@ -4,7 +4,7 @@ Le Knowledge Lifecycle Management (KLM) est une approche systématique pour la g
 
 ## Etat du projet
 
-Actuellement, la plateforme permet de visualiser le contenu du fichier json contenant les données liées à une filière metier. Pour tester, vu qu'aucun déploiement n'a été fait pour le moment faute de ressources, il faudra procéder comme suit :
+Actuellement, la plateforme permet de visualiser le contenu du fichier json contenant les données liées à une filière metier. Pour tester, vu qu'aucun déploiement n'a été fait pour le moment faute de ressources, il faudra procéder comme suit : \n
  1- Installer le projet en local soit en faisant un git clone soit en téléchargeant le projet directement
  2- Ouvrir le projet, se placer à la racine et saisir : `npm install`
  3- Une fois les dépendances installées grâce à la précédente commande, taper la commande : `npm start`
