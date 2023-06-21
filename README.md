@@ -1,10 +1,11 @@
-# Getting Started with Create React App
+# Présentation du projet
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Le Knowledge Lifecycle Management (KLM) est une approche systématique pour la gestion des connaissances au sein d'une organisation. Il englobe la création, l'organisation, le partage, l'utilisation et la préservation des connaissances tout au long de leur cycle de vie![image](https://github.com/PerdrieauC/KLM/assets/85830004/faebc75d-9c1d-49b3-91dd-b2fddfc7a5e6)
 
-## Available Scripts
+## Etat du projet
 
-In the project directory, you can run:
+Actuellement, la plateforme permet de visualiser le contenu du fichier json contenant les données liées à une filière metier. Pour tester, vu qu'aucun déploiement n'a été fait pour le moment faute de ressources, il faudra procéder comme suit :
+### 1- 
 
 ### `npm start`
 
